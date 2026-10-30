@@ -1,0 +1,42 @@
+{
+ "byStem": {
+  "drama": [
+   "Drama"
+  ],
+  "kavala": [
+   "Kavala"
+  ]
+ },
+ "plane": {
+  "country": "greece",
+  "region": "macedonia",
+  "entry": "R264",
+  "sharealike": "ODbL 1.0",
+  "listed": [
+   {
+    "name": "Goumenissa",
+    "why": "Its rules take some of its communities only in part, so drawing them whole would claim ground that is not its own."
+   },
+   {
+    "name": "Makedonia",
+    "why": "An IGP, not a protected designation of origin: wider than this map."
+   },
+   {
+    "name": "Epanomi",
+    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+   },
+   {
+    "name": "Florina",
+    "why": "Most of its ground lies outside this region."
+   },
+   {
+    "name": "Pella",
+    "why": "Most of its ground lies outside this region."
+   },
+   {
+    "name": "Siatista",
+    "why": "Most of its ground lies outside this region."
+   }
+  ]
+ }
+}

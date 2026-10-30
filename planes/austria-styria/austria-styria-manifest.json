@@ -1,0 +1,162 @@
+{
+ "generator": "region_map.py",
+ "country": "austria-styria",
+ "projection": {
+  "kind": "equirectangular",
+  "x_factor": 0.68078594,
+  "origin": [
+   9.941219,
+   -47.758619
+  ],
+  "scale": 284.763458,
+  "note": "canvas_x = (lon*x_factor - origin[0])*scale + canvas_origin[0] ; canvas_y = (-lat - origin[1])*scale + canvas_origin[1]. canvas_origin defaults to [2, 2] when absent, which is what a main projection uses, so it is written only by an inset that needs a different one.",
+  "cell_note": "Those are CONTINUOUS canvas coordinates. The cell containing a point is floor(x), floor(y) — the rasteriser fills cell i from [i, i+1). Rounding picks the nearest cell CENTRE and lands one cell over for anything past the halfway line; harmless on a large region, decisive on a small child."
+ },
+ "base": {
+  "canvas": [
+   353,
+   382
+  ],
+  "export_scale": 5,
+  "unassigned": "#CEC6BA",
+  "outline": "#1A1420",
+  "key": "#EE03E1",
+  "layers": {
+   "interactive": "austria-styria-regions.png",
+   "backdrop": "austria-styria-backdrop.png",
+   "index": "austria-styria-index.png"
+  },
+  "index_legend": {
+   "0": "outside the country (sea, neighbour, coastline ink)",
+   "255": "inside the country, unassigned ground",
+   "1..N": "a region — see regions[].id"
+  },
+  "index_note": "one byte per LOGICAL cell, canvas-sized, NOT export_scale. Hit-test against this, not against pixel colour.",
+  "subject_rect": [
+   0.0312,
+   0.0288,
+   0.9377,
+   0.9424
+  ],
+  "subject_rect_note": "x,y,w,h as fractions of the canvas. Scale the two layers together so this rect fills the intended width; the backdrop bleeds off the screen edges."
+ },
+ "backdrop": {
+  "margin_px": 10,
+  "sea": "#38506B",
+  "foreign": "#8C8778",
+  "foreign_outline": "#1A1420",
+  "shallow": "#4E6985",
+  "shelf_px": 3,
+  "countries": [
+   "Croatia",
+   "Germany",
+   "Hungary",
+   "Italy",
+   "Slovenia"
+  ]
+ },
+ "marker_clearance": {
+  "12": [],
+  "10": [],
+  "8": []
+ },
+ "carves": {
+  "vulkanlandsteiermark": {
+   "source": "pl-austria-styria.json",
+   "units": [
+    "vulkanlandsteiermark"
+   ],
+   "takes": [
+    "unassigned"
+   ],
+   "area_px": 26566,
+   "clipped": 0.007,
+   "clipped_to": {
+    "off-land": 187
+   },
+   "took": {
+    "unassigned": 26566
+   }
+  },
+  "weststeiermark": {
+   "source": "pl-austria-styria.json",
+   "units": [
+    "weststeiermark"
+   ],
+   "takes": [
+    "unassigned",
+    "vulkanlandsteiermark"
+   ],
+   "area_px": 14925,
+   "clipped": 0.0,
+   "clipped_to": {
+    "off-land": 0
+   },
+   "took": {
+    "vulkanlandsteiermark": 19,
+    "unassigned": 14906
+   }
+  },
+  "sudsteiermark": {
+   "source": "pl-austria-styria.json",
+   "units": [
+    "sudsteiermark"
+   ],
+   "takes": [
+    "unassigned",
+    "vulkanlandsteiermark",
+    "weststeiermark"
+   ],
+   "area_px": 2989,
+   "clipped": 0.0197,
+   "clipped_to": {
+    "off-land": 60
+   },
+   "took": {
+    "vulkanlandsteiermark": 25,
+    "weststeiermark": 16,
+    "unassigned": 2948
+   }
+  }
+ },
+ "carves_note": "A first-plane area cut by a published boundary (see region_map.py). It is an ordinary region in regions[] and the index; this block only records where its edge came from and what it was cut from.",
+ "splits": [],
+ "regions": {
+  "vulkanlandsteiermark": {
+   "id": 1,
+   "button": [
+    0.6459,
+    0.3927
+   ],
+   "clearance_px": 58.5,
+   "area_px": 26522,
+   "fill": "#8B43AD",
+   "units": [],
+   "detail": null
+  },
+  "weststeiermark": {
+   "id": 2,
+   "button": [
+    0.3484,
+    0.5785
+   ],
+   "clearance_px": 44.9,
+   "area_px": 14909,
+   "fill": "#82482B",
+   "units": [],
+   "detail": null
+  },
+  "sudsteiermark": {
+   "id": 3,
+   "button": [
+    0.4759,
+    0.7749
+   ],
+   "clearance_px": 21.9,
+   "area_px": 2989,
+   "fill": "#65AD43",
+   "units": [],
+   "detail": null
+  }
+ }
+}

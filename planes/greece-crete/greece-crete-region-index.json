@@ -1,0 +1,38 @@
+{
+ "byStem": {
+  "sitia": [
+   "Sitia"
+  ],
+  "archanes": [
+   "Archanes"
+  ]
+ },
+ "plane": {
+  "country": "greece",
+  "region": "crete",
+  "entry": "R201",
+  "sharealike": "ODbL 1.0",
+  "listed": [
+   {
+    "name": "Peza",
+    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+   },
+   {
+    "name": "Dafnes",
+    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+   },
+   {
+    "name": "Malvasia Chandakas-Candia",
+    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+   },
+   {
+    "name": "Crete",
+    "why": "An IGP, not a protected designation of origin: wider than this map."
+   },
+   {
+    "name": "Malvasia Sitia",
+    "why": "The same ground as Sitia."
+   }
+  ]
+ }
+}

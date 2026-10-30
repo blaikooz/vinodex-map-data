@@ -1,0 +1,20 @@
+{
+ "byStem": {
+  "vulkanlandsteiermark": [
+   "Vulkanland Steiermark"
+  ],
+  "weststeiermark": [
+   "Weststeiermark"
+  ],
+  "sudsteiermark": [
+   "Südsteiermark"
+  ]
+ },
+ "plane": {
+  "country": "austria",
+  "region": "styria",
+  "entry": "R153",
+  "sharealike": "ODbL 1.0",
+  "listed": []
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "byStem": {
+  "ribeirasacra": [
+   "Ribeira Sacra"
+  ],
+  "valdeorras": [
+   "Valdeorras"
+  ],
+  "monterrei": [
+   "Monterrei"
+  ],
+  "quirogabibei": [
+   "Quiroga-Bibei"
+  ],
+  "chantada": [
+   "Chantada"
+  ]
+ },
+ "plane": {
+  "country": "spain",
+  "region": "galicia",
+  "entry": "R195",
+  "sharealike": "ODbL 1.0",
+  "listed": [
+   {
+    "name": "Rías Baixas",
+    "why": "Its rules take some of its municipios only in part, so drawing them whole would claim ground that is not its own."
+   },
+   {
+    "name": "Ribeiro",
+    "why": "Its rules take some of its municipios only in part, so drawing them whole would claim ground that is not its own."
+   },
+   {
+    "name": "Amandi",
+    "why": "Its pliego takes the parroquia of Anllo only for its lugares in the Sil basin, and Anllo is more than a tenth of its ground, so its whole parroquias would leave too much out."
+   }
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "byStem": {
+  "magnisia": [
+   "Magnisia"
+  ],
+  "elassona": [
+   "Elassona"
+  ],
+  "tyrnavos": [
+   "Tyrnavos"
+  ]
+ },
+ "plane": {
+  "country": "greece",
+  "region": "thessaly",
+  "entry": "R263",
+  "sharealike": "ODbL 1.0",
+  "listed": [
+   {
+    "name": "Rapsani",
+    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+   },
+   {
+    "name": "Anchialos",
+    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+   },
+   {
+    "name": "Mesenikola",
+    "why": "Its rules take some of its communities only in part, so drawing them whole would claim ground that is not its own."
+   },
+   {
+    "name": "Thessalia",
+    "why": "An IGP, not a protected designation of origin: wider than this map."
+   },
+   {
+    "name": "Meteora",
+    "why": "Its six municipal units are not in the open boundary layer."
+   }
+  ]
+ }
+}

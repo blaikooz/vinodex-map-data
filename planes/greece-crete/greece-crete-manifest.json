@@ -1,0 +1,122 @@
+{
+ "generator": "region_map.py",
+ "country": "greece-crete",
+ "projection": {
+  "kind": "equirectangular",
+  "x_factor": 0.81726491,
+  "origin": [
+   20.306297,
+   -35.507649
+  ],
+  "scale": 287.767742,
+  "note": "canvas_x = (lon*x_factor - origin[0])*scale + canvas_origin[0] ; canvas_y = (-lat - origin[1])*scale + canvas_origin[1]. canvas_origin defaults to [2, 2] when absent, which is what a main projection uses, so it is written only by an inset that needs a different one.",
+  "cell_note": "Those are CONTINUOUS canvas coordinates. The cell containing a point is floor(x), floor(y) — the rasteriser fills cell i from [i, i+1). Rounding picks the nearest cell CENTRE and lands one cell over for anything past the halfway line; harmless on a large region, decisive on a small child."
+ },
+ "base": {
+  "canvas": [
+   382,
+   188
+  ],
+  "export_scale": 5,
+  "unassigned": "#CEC6BA",
+  "outline": "#1A1420",
+  "key": "#EE03E1",
+  "layers": {
+   "interactive": "greece-crete-regions.png",
+   "backdrop": "greece-crete-backdrop.png",
+   "index": "greece-crete-index.png"
+  },
+  "index_legend": {
+   "0": "outside the country (sea, neighbour, coastline ink)",
+   "255": "inside the country, unassigned ground",
+   "1..N": "a region — see regions[].id"
+  },
+  "index_note": "one byte per LOGICAL cell, canvas-sized, NOT export_scale. Hit-test against this, not against pixel colour.",
+  "subject_rect": [
+   0.0288,
+   0.0585,
+   0.9424,
+   0.883
+  ],
+  "subject_rect_note": "x,y,w,h as fractions of the canvas. Scale the two layers together so this rect fills the intended width; the backdrop bleeds off the screen edges."
+ },
+ "backdrop": {
+  "margin_px": 10,
+  "sea": "#38506B",
+  "foreign": "#8C8778",
+  "foreign_outline": "#1A1420",
+  "shallow": "#4E6985",
+  "shelf_px": 3,
+  "countries": []
+ },
+ "marker_clearance": {
+  "12": [],
+  "10": [],
+  "8": []
+ },
+ "carves": {
+  "sitia": {
+   "source": "pl-greece-crete.json",
+   "units": [
+    "sitia"
+   ],
+   "takes": [
+    "unassigned"
+   ],
+   "area_px": 2082,
+   "clipped": 0.0289,
+   "clipped_to": {
+    "off-land": 62
+   },
+   "took": {
+    "unassigned": 2082
+   }
+  },
+  "archanes": {
+   "source": "pl-greece-crete.json",
+   "units": [
+    "archanes"
+   ],
+   "takes": [
+    "sitia",
+    "unassigned"
+   ],
+   "area_px": 777,
+   "clipped": 0.0,
+   "clipped_to": {
+    "off-land": 0
+   },
+   "took": {
+    "unassigned": 777
+   }
+  }
+ },
+ "carves_note": "A first-plane area cut by a published boundary (see region_map.py). It is an ordinary region in regions[] and the index; this block only records where its edge came from and what it was cut from.",
+ "splits": [],
+ "regions": {
+  "sitia": {
+   "id": 1,
+   "button": [
+    0.7487,
+    0.5053
+   ],
+   "clearance_px": 11.3,
+   "area_px": 2082,
+   "fill": "#8BC072",
+   "units": [],
+   "detail": null
+  },
+  "archanes": {
+   "id": 2,
+   "button": [
+    0.1806,
+    0.4362
+   ],
+   "clearance_px": 9.2,
+   "area_px": 777,
+   "fill": "#2B8268",
+   "units": [],
+   "detail": null
+  }
+ }
+}
