@@ -15,15 +15,15 @@
   "listed": [
    {
     "name": "Goumenissa",
-    "why": "Its rules take some of its communities only in part, so drawing them whole would claim ground that is not its own."
+    "why": "Its rules take some communities only in part, so drawing them whole would claim ground that is not its own."
    },
    {
     "name": "Makedonia",
-    "why": "An IGP, not a protected designation of origin: wider than this map."
+    "why": "A broader regional label for wine rather than an appellation, covering far more ground than the areas drawn here."
    },
    {
     "name": "Epanomi",
-    "why": "Its communities are not all in the open boundary layer, and a zone with holes in it would mislead."
+    "why": "Some of the communities its rules name are missing from the open map data, and a zone drawn with holes would mislead."
    },
    {
     "name": "Florina",
@@ -36,6 +36,14 @@
    {
     "name": "Siatista",
     "why": "Most of its ground lies outside this region."
+   },
+   {
+    "name": "Naoussa",
+    "why": "Drawn as its own area on the Greece map: the slopes of Mount Vermio in Imathia, west of the ground this map covers."
+   },
+   {
+    "name": "Amyndeon",
+    "why": "Drawn as its own area on the Greece map: the lake basin of Amyntaio in Florina, west of the ground this map covers."
    }
   ]
  }

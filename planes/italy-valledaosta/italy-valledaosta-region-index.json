@@ -18,19 +18,19 @@
   "listed": [
    {
     "name": "Donnas",
-    "why": "A sub-zone its rules draw by a line rather than by whole comuni."
+    "why": "A sub-zone whose rules draw its edge by a line, such as a road, river or height, rather than by whole municipalities, so this map cannot follow it."
    },
    {
     "name": "Chambave",
-    "why": "A sub-zone its rules draw by a line rather than by whole comuni."
+    "why": "A sub-zone whose rules draw its edge by a line, such as a road, river or height, rather than by whole municipalities, so this map cannot follow it."
    },
    {
     "name": "Arnad-Montjovet",
-    "why": "A sub-zone its rules draw by a line rather than by whole comuni."
+    "why": "A sub-zone whose rules draw its edge by a line, such as a road, river or height, rather than by whole municipalities, so this map cannot follow it."
    },
    {
     "name": "Enfer d'Arvier",
-    "why": "A sub-zone its rules draw by a line rather than by whole comuni."
+    "why": "A sub-zone whose rules draw its edge by a line, such as a road, river or height, rather than by whole municipalities, so this map cannot follow it."
    }
   ]
  }
